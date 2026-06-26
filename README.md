@@ -65,15 +65,19 @@ The `-R` option is necessary to perform a USB Reset and make the device use the 
    git apply ../patches/fw.diff
    
    cd hdl
-   git apply ../../hdl.diff
+   git apply ../../patches/hdl.diff
    cd ..
    
    cd linux
-   git apply ../../linux.diff
+   git apply ../../patches/linux.diff
    cd ..
    
    cd u-boot-xlnx
-   git apply ../../u-boot-xlnx.diff
+   git apply ../../patches/u-boot-xlnx.diff
+   cd ..
+
+   cd buildroot
+   git apply ../../patches/buildroot.diff
    cd ..
    
    ```
